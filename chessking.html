@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.rectangle {
+  height: 50px;
+  width: 220px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  transform: translateX(-4%);
+}
+.rectangle2 {
+  height: 150px;
+  width: 300px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  top: 40%;
+  left: 35%;
+}
+.trapezoid {
+  width: 200px;
+  height: 150px;
+  background: rgb(0, 0, 0);
+  transform: perspective(5px) rotateX(-1deg);
+  /* border-radius: 15px; */
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-bottom: 15px;
+}
+.square {
+  height: 60px;
+  width: 50px;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(150%);
+}
+.square2 {
+  height: 35px;
+  width: 50px;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(150%);
+  z-index: -1;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.rectangle-small {
+  height: 50px;
+  width: 120px;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(32%);
+  border-radius: 6px;
+}
+.center {
+  padding-left: 40vw;
+  padding-top: 20vh;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+    <div class="center">
+      <div class="square2"></div>
+      <div class="rectangle-small"></div>
+      <div class="square"></div>
+      <div class="trapezoid"></div>
+      <div class="rectangle"></div>
+    </div>
+</body>
+</html> 
