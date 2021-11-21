@@ -1,9 +1,19 @@
 <html>
 <head>
     <style>
+
+    .center {
+
+    padding-left: 40vw;
+
+    padding-top: 20vh;
+
+    text-align: center;
+
+    }
     .face {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: relative;
   margin: 0 15px 30px 0;
   border-radius: 50%;
@@ -12,17 +22,17 @@
 
 .eye {
   position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 64px;
-  left: 30px;
+  width: 35px;
+  height: 35px;
+  top: 100px;
+  left: 60px;
   z-index: 1;
   border-radius: 50%; 
 } 
 
 .eye:last-child {
   left: auto;
-  right: 16px;
+  right: 60px;
 }
 
 .mouth {
@@ -31,8 +41,8 @@
   left: 0;
   right: 0;
   z-index: 1;
-  width: 140px;
-  height: 68px;
+  width: 70px;
+  height: 34px;
   margin: 0 auto;
   border-radius: 0 0 70px 70px;
   overflow: hidden;
@@ -49,47 +59,41 @@
   content: '';
   display: block;
   position: absolute;
-  width: 20px;
-  height: 5px;
-  top: -1px;
-  left: -4px;
+  width: 70px;
+  height: 20px;
+  top: -10px;
+  left: -18px;
   transform: rotate(20deg);
 }
 
 .angry .eye:last-child:before {
   left: auto;
-  right: -4px;
+  right: -18px;
   transform: rotate(-20deg);
 }
 
 .angry .mouth {
-  width: 40px;
-  height: 8px;
-  top: 64px;
+  width: 100px;
+  height: 15px;
+  top: 200px;
   border-radius: 0;
 }
-.center {
-  padding-left: 40vw;
-  padding-top: 20vh;
-  text-align: center;
-}
-</style>   
+    </style>   
 </head>
 <body>
-    <div class="center">
-
-        <div class="emoji angry">
-            <figure class="face">
-              <span class="eyes">
-                  <span class="eye"></span>
-                  <span class="eye"></span>
-              </span>
-              <span class="mouth">
-              </span>
-            </figure>
-          </div>
-        </div>
-      </div>       
+  <div class="center">
+    <div class="emoji angry">
+        <figure class="face">
+          <span class="eyes">
+              <span class="eye"></span>
+              <span class="eye"></span>
+          </span>
+          <span class="mouth">
+          </span>
+        </figure>
+      </div>
     </div>
+  </div>  
+</div>     
 </body>
 </html>
