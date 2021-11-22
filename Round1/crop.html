@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .center {
+        text-align: center;
+        position: relative;
+        height: 1em;
+        width: 1em;
+      }
+
+      .center .structure {
+        position: absolute;
+        height: 0.875em;
+      }
+
+      .center .bgcolor {
+        background-color: currentColor;
+      }
+
+      .center .absolute {
+        position: absolute;
+      }
+
+      .center .horiz1 {
+        height: 0.187em;
+        width: 0.312em;
+        border-radius: 0.045em;
+        top: 0.125em;
+      }
+
+      .center .horiz2 {
+        width: 0.4em;
+        left: 0.225em;
+        height: 0.187em;
+        bottom: 0;
+      }
+
+      .center .vert {
+        width: 0.187em;
+        left: 0.125em;
+        height: 0.875em;
+        border-radius: 0.045em;
+        top: 0;
+      }
+
+      .center .structureR {
+        transform: rotate(180deg);
+        right: 0;
+        bottom: 0;
+      }
+
+      .center .diagonal {
+        height: 0.125em;
+        width: 1em;
+        transform: rotate(-45deg);
+        border-radius: 0.045em;
+        left: 0.125em;
+        bottom: 0.57em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center" style="font-size: 500px; color: black">
+      <div class="structure structureL">
+        <div class="horiz1 bgcolor absolute"></div>
+        <div class="horiz2 bgcolor absolute"></div>
+        <div class="vert bgcolor absolute"></div>
+      </div>
+      <div class="structure structureR">
+        <div class="horiz1 bgcolor absolute"></div>
+        <div class="horiz2 bgcolor absolute"></div>
+        <div class="vert bgcolor absolute"></div>
+      </div>
+      <div class="diagonal bgcolor absolute"></div>
+    </div>
+  </body>
+</html>
