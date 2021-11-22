@@ -1,0 +1,95 @@
+<html>
+<head>
+    <style>
+        .center {
+            padding-left: 40vw;
+            padding-top: 20vh;
+            text-align: center;
+            
+        }
+        .rectangle {
+            height: 50px;
+            width: 375px;
+            background-color: rgb(0, 0, 0);
+            transform: translateX(-10%);
+        }
+        .dot1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            display: inline-block;
+            transform: translate(-18px,-80px);
+            
+        }
+        .dot2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            display: inline-block;
+            transform: translate(-498px,-80px);
+            
+        }
+        .rotated-half-circle {
+            width: 300px;
+            height: 100px;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+            border: 40px solid #000;
+            border-bottom: 0;
+            transform: translate(-70px,-120px);
+            z-index: -1;
+            overflow:hidden;
+        }
+        .square1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            transform: translate(-100px,-300px);
+        }
+        .square2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            transform: translate(240px,-400px)
+
+        }
+        .square3 {
+            height: 100px;
+            width: 180px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            z-index: 5;
+            overflow:hidden;
+            transform: translate(30px,-300px)
+
+        }
+        .square4 {
+            height: 100px;
+            width: 120px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            z-index: 5;
+            overflow:hidden;
+            transform: translate(63px,-400px)
+
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="rectangle"></div>
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="rotated-half-circle"></div>
+        <div class="square3"></div>
+        <div class="square4"></div>
+        
+        
+        <div class="square1"></div>
+        <div class="square2"></div>
+    </div>
+</body>
+</html>
