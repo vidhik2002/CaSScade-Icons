@@ -1,0 +1,119 @@
+<html>
+<head>
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .center {
+        text-align: center;
+        height: 600px;
+        width: 600px;
+        position: relative;
+    }
+    .upper-rectangle {
+        height: 120px;
+        width: 270px;
+        background-color: orange;
+        position: absolute;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        left: 140px;
+        top: 0;
+    }
+
+    .upper-rectangle::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -45px;
+        width: 50px;
+        height:105px;
+        background-color: orange;
+        clip-path: polygon(100% 0, 28% 100%, 100% 100%);
+    }
+
+    .lower-rectangle {
+        height: 120px;
+        width: 400px;
+        background-color: orange;
+        position: absolute;
+        top:120px;
+        left: 50px;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+    }
+
+    .lower-rectangle::before {
+        height: 60px;
+        width: 50px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        content: "";
+        position: absolute;
+        background-color: lightgray;
+        top: 0;
+        left: 0;
+    }
+
+    .right-wheel, .left-wheel {
+        height: 80px;
+        width: 80px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 200px;
+    }
+
+    .right-wheel {
+        left: 320px;
+    }
+
+    .left-wheel {
+        left: 100px;
+    }
+
+    .leaf {
+        width: 120px;
+        height: 80px;
+        background: #009245;
+        position: absolute;
+        border-radius: 100%;
+        transform: rotate(135deg);
+        top: 60px;
+        left: 200px;
+    }
+    .leaf::before {
+        position: absolute;
+        content: "";
+        height: 36px;
+        width: 36px;
+        background: #009245;
+        left: -5px;
+        top: 21px;
+        transform: rotate(47deg);
+    }
+    .leaf::after {
+        position: absolute;
+        content: "";
+        height:100px;
+        width: 6px;
+        background: #4D4D4D;
+        transform: rotate(90deg) translateX(-150%) translateY(-25%);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="upper-rectangle"></div>
+        <div class="lower-rectangle"></div>
+        <div class="right-wheel"></div>
+        <div class="left-wheel"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+</html>
