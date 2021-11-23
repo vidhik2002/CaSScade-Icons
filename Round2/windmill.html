@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      .center {
+        padding-left: 40vw;
+
+        padding-top: 20vh;
+
+        text-align: center;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 0 15px 30px 0;
+        border-radius: 50%;
+        background: lightblue;
+        border: 0.5px solid black;
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        position: absolute;
+
+        border: 0 solid transparent;
+        border-right-width: 7px;
+        border-left-width: 7px;
+
+        border-bottom: 85px solid white;
+      }
+      /* .triangle::after,
+      .triangle::before{
+        border:0.5px solid black;
+      } */
+      .triangle-up {
+        left: 138px;
+        top: 44px;
+      }
+      .triangle-left {
+        left: 89px;
+        top: 130px;
+        transform: rotate(240deg);
+      }
+      .triangle-right {
+        left: 188px;
+        top: 130px;
+        transform: rotate(120deg);
+      }
+
+      .small-circle {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 130px;
+        top: 128px;
+        border-radius: 50%;
+        background: yellow;
+      }
+      .below-thing {
+        height: 139px;
+        width: 100px;
+        background: white;
+        clip-path: polygon(48% 0, 54% 0, 60% 100%, 44% 100%);
+        position: absolute;
+        top: 158px;
+        left: 96px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="circle">
+        <div class="triangle triangle-up"></div>
+        <div class="small-circle"></div>
+        <div class="triangle triangle-left"></div>
+        <div class="triangle triangle-right"></div>
+        <div class="below-thing"></div>
+      </div>
+    </div>
+  </body>
+</html>
