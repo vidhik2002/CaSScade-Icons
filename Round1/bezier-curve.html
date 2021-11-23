@@ -1,17 +1,25 @@
 <html>
 <head>
     <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
         .center {
-            padding-left: 40vw;
-            padding-top: 20vh;
-            text-align: center;
-            
-        }
+        text-align: center;
+        height: 600px;
+        width: 600px;
+        /* background-color: antiquewhite; */
+        /* padding-top:100px; */
+      }
         .rectangle {
             height: 50px;
             width: 375px;
             background-color: rgb(0, 0, 0);
-            transform: translateX(-10%);
+            transform: translate(30%,340%);
         }
         .dot1 {
             height: 100px;
@@ -19,7 +27,7 @@
             background-color: rgb(0, 0, 0);
             border-radius: 50%;
             display: inline-block;
-            transform: translate(-18px,-80px);
+            transform: translate(250%,90%);
             
         }
         .dot2 {
@@ -28,7 +36,7 @@
             background-color: rgb(0, 0, 0);
             border-radius: 50%;
             display: inline-block;
-            transform: translate(-498px,-80px);
+            transform: translate(-250%,90%);
             
         }
         .rotated-half-circle {
@@ -37,7 +45,7 @@
             border-radius: 50% 50% 0 0 / 100% 100% 0 0;
             border: 40px solid #000;
             border-bottom: 0;
-            transform: translate(-70px,-120px);
+            transform: translate(100px,40px);
             z-index: -1;
             overflow:hidden;
         }
@@ -46,14 +54,14 @@
             width: 100px;
             background-color: rgb(0, 0, 0);
             border-radius: 15px;
-            transform: translate(-100px,-300px);
+            transform: translate(75px,-50px);
         }
         .square2 {
             height: 100px;
             width: 100px;
             background-color: rgb(0, 0, 0);
             border-radius: 15px;
-            transform: translate(240px,-400px)
+            transform: translate(420px,-150px)
 
         }
         .square3 {
@@ -63,7 +71,7 @@
             border-radius: 15px;
             z-index: 5;
             overflow:hidden;
-            transform: translate(30px,-300px)
+            transform: translate(200px,-140px)
 
         }
         .square4 {
@@ -73,7 +81,8 @@
             border-radius: 15px;
             z-index: 5;
             overflow:hidden;
-            transform: translate(63px,-400px)
+           transform: translateX(25%);
+            /* transform: translate(63px,-400px) */
 
         }
     </style>
@@ -81,11 +90,15 @@
 <body>
     <div class="center">
         <div class="rectangle"></div>
-        <div class="dot1"></div>
+        <div class="dot1">
+
+        </div>
         <div class="dot2"></div>
         <div class="rotated-half-circle"></div>
-        <div class="square3"></div>
-        <div class="square4"></div>
+        <div class="square3">
+
+            <div class="square4"></div>
+        </div>
         
         
         <div class="square1"></div>
