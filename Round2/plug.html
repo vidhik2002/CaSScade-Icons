@@ -1,0 +1,119 @@
+<html>
+<head>
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .center {
+        text-align: center;
+        font-size: 600px;
+        height: 1em;
+        width: 1em;
+        position: relative;
+    }
+    .leaf {
+        width: 0.20em;
+        height: 0.130em;
+        background: #009245;
+        position: absolute;
+        border-radius: 100%;
+    }
+    .leaf::before {
+        position: absolute;
+        content: "";
+        height: 0.06em;
+        width: 0.06em;
+        background: #009245;
+        left: -0.007em;
+        top: 0.035em;
+        transform: rotate(45deg);
+    }
+    .leaf::after {
+        position: absolute;
+        content: "";
+        height: 0.13em;
+        width: 0.01em;
+        background: #4D4D4D;
+        right: 0.1;
+        top: -0.0em;
+        transform: rotate(90deg);
+    }
+    .leaf1 {
+        transform: rotate(40deg);
+        bottom: 0.27em;
+        left: 0.284em;
+    }
+    .leaf2 {
+        transform: rotate(140deg);
+        bottom: 0.327em;
+        right: 0.284em;
+    }
+    .wire {
+        background: #4D4D4D;
+        width: 0.02em;
+        height: 0.36em;
+        position: absolute;
+        left: 0.49em;
+        bottom: 0.167em;
+    }
+    .plug {
+        width: 0.25em;
+        height: 0.16em;
+        background: #999999;
+        position: absolute;
+        bottom: 0.525em;
+        left: 0.37em;
+        border-bottom-left-radius: 0.07em;
+        border-bottom-right-radius: 0.07em;
+        z-index: 2;
+    }
+    .plug::before {
+        content: "";
+        height: 0.02em;
+        width: 0.150em;
+        background: #00FFFF;
+        position: absolute;
+        top: 0.044em;
+        left: 0.05em;
+    }
+    .plug::after {
+        content: "";
+        height: 0.02em;
+        width: 0.150em;
+        background: #00FFFF;
+        position: absolute;
+        bottom: 0.044em;
+        left: 0.05em;
+    }
+    .pin {
+        position: absolute;
+        width: 0.02em;
+        height: 0.15em;
+        background: #FCEE21;
+        border-radius: 0.07em;
+    }
+    .pin1 {
+        top: 0.17em;
+        left: 0.43em;
+    }
+    .pin2 {
+        top: 0.17em;
+        left: 0.538em;
+    }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="leaf leaf1"></div>
+        <div class="leaf leaf2"></div>
+        <div class="wire"></div>
+        <div class="plug"></div>
+        <div class="pin pin1"></div>
+        <div class="pin pin2"></div>
+    </div>
+</body>
+</html>
