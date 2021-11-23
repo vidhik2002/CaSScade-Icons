@@ -1,0 +1,89 @@
+<html>
+<head>
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .center {
+        text-align: center;
+        font-size: 600px;
+        height: 1em;
+        width: 1em;
+        position: relative;
+        background-color: white;
+    }
+    .circle {
+        border-radius: 100%;
+        width: 0.5em;
+        height: 0.5em;
+        background-color: #F2C233;
+        top: 0.25em;
+        left: 0.25em;
+        position: absolute;
+    }
+    .circle::after {
+        content:'';
+        position: absolute;
+        width: 0.25em;
+        height: 0.25em;
+        background-color: white;
+        right: -0.0625em;
+        top: 0.125em;
+        transform: rotate(45deg);
+    }
+    .circle::before {
+        content:'';
+        position: absolute;
+        width: 0.066em;
+        height: 0.066em;
+        background-color: #7D513D;
+        left: 0.26em;
+        top: 0.071em;
+        border-radius: 100%;
+    }
+    .line {
+        height: 0.160em;
+        width: 0.073em;
+        background-color: #7D513D;
+        border-radius: 0.036em;
+        position: absolute;
+    }
+    .line1 {
+        left: 0.48em;
+    }
+    .line2 {
+        left: 0.15em;
+        top: 0.14em;
+        transform: rotate(-45deg);
+    }
+    .line3 {
+        left: 0.07em;
+        top: 0.43em;
+        transform: rotate(90deg);
+    }
+    .line4 {
+        left: 0.15em;
+        bottom: 0.14em;
+        transform: rotate(45deg);
+    }
+    .line5 {
+        left: 0.48em;
+        bottom: 0em;
+    }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="circle"></div>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+        <div class="line line5"></div>
+    </div>
+</body>
+</html>
