@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 100vh; */
+        /* width: 100vw; */
+        margin: 0;
+    }
+    .center {
+        text-align: center;
+        height: 600px;
+        width: 600px;
+        
+    }
+      .basket-ball {
+        height: 20em;
+        width: 20em;
+        border-radius: 50%;
+        background-color: black;
+        box-sizing: border-box;
+        /* -webkit-transform: translate(-50%, -50%) rotate(45deg); */
+        transform: translate(40%, 40%) rotate(45deg);
+      }
+      .basket-ball:before,
+      .basket-ball:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: solid 0.6em white;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+      .line1 {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-right: solid 0.6em white;
+        box-sizing: border-box;
+        right: 50%;
+      }
+
+      .line2 {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-top: solid 0.6em white;
+        box-sizing: border-box;
+        top: 50%;
+      }
+
+      .basket-ball:before {
+        right: 70%;
+      }
+      .basket-ball:after {
+        left: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="basket-ball">
+        <div class="line2"></div>
+        <div class="line1"></div>
+      </div>
+    </div>
+  </body>
+</html>
